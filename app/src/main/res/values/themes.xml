@@ -3,6 +3,18 @@
     <style name="Base.Theme.RegistroUsuario" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorOnPrimary">@color/Text_color</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/Text_color</item>
+        <item name="android:textColorPrimary">@color/Text_color</item>
+        <item name="android:textColorSecondary">@color/Text_color</item>
+        <item name="android:textColorHint">@color/Text_color</item>
+
+        <item name="android:textSize">20sp</item>
+
+
+
     </style>
 
     <style name="Theme.RegistroUsuario" parent="Base.Theme.RegistroUsuario" />

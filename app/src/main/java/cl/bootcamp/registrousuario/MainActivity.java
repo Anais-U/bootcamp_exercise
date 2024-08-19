@@ -37,14 +37,16 @@ public class MainActivity extends AppCompatActivity {
                 String name = editTextName.getText().toString();
                 String lastName = editTextLastName.getText().toString();
                 String email = editTextEmail.getText().toString();
-                String Pass = editTextPass.getText().toString();
+                String pass = editTextPass.getText().toString();
 
                 // Validamos que los campos no estén vacíos
-                if (TextUtils.isEmpty(name) || TextUtils.isEmpty(lastName) || TextUtils.isEmpty(email) || TextUtils.isEmpty(Pass)) {
+                if (TextUtils.isEmpty(name) || TextUtils.isEmpty(lastName) || TextUtils.isEmpty(email) || TextUtils.isEmpty(pass)) {
                     Toast.makeText(MainActivity.this, "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
                     // Si están completos, mostramos el mensaje de bienvenida
-                    String welcomeMessage = "¡Hola " + name + " " + lastName + "! Email: " + email;
+                    String welcomeMessage =  "¡Hola " + name +
+                            " " + lastName +" "+ "Email: " + email  +" "+
+                            "Contraseña: " + pass;
                     Toast.makeText(MainActivity.this, welcomeMessage, Toast.LENGTH_LONG).show();
                 }
             }
